@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="vi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -1450,8 +1449,21 @@
             overlay.classList.toggle('hidden');
         }
 
-        // Khởi tạo dữ liệu khi tải trang
+        // Khởi tạo dữ liệu khi tải trang & dọn sạch các dòng thừa nếu có
         window.onload = function() {
+            // Xóa mọi text node thừa chứa <!DOCTYPE html> nếu trình duyệt hiển thị
+            document.body.childNodes.forEach(node => {
+                if (node.nodeType === Node.TEXT_NODE && node.textContent.includes('DOCTYPE')) {
+                    node.remove();
+                }
+            });
+            // Ẩn triệt để mọi thanh công cụ FLATSOME READY nếu còn lưu cache
+            document.querySelectorAll('div, section, aside').forEach(el => {
+                if (el.innerText && el.innerText.includes('FLATSOME READY') && el.tagName !== 'BODY') {
+                    el.remove();
+                }
+            });
+
             renderProducts(PRODUCTS);
             renderProjects();
         };
