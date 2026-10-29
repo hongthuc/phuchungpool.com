@@ -9,7 +9,7 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter & Montserrat (Chuẩn font phổ biến trên Flatsome Việt Nam) -->
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -88,31 +88,6 @@
         }
         .flatsome-product-box:hover .product-img {
             transform: scale(1.05);
-        }
-
-        /* Chế độ hiển thị nhãn UX Builder hỗ trợ người thiết kế */
-        .ux-helper-badge {
-            display: none;
-        }
-        body.show-ux-guides .ux-section-wrap {
-            outline: 2px dashed #0284c7;
-            position: relative;
-        }
-        body.show-ux-guides .ux-helper-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: #0284c7;
-            color: #fff;
-            font-size: 11px;
-            font-weight: 700;
-            padding: 3px 10px;
-            border-radius: 0 0 6px 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 30;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
 
         /* Nút gọi điện rung nhẹ thu hút chú ý */
@@ -358,11 +333,8 @@
 
     <!-- =====================================================================
          SECTION 1: BANNER CHÍNH (TÁI HIỆN ĐÚNG ẢNH BÌA FACEBOOK PHÚC HƯNG POOL SAUNA)
-         UX Builder: [section] -> [row] -> [col] Banner + 3 cột hình ảnh
          ===================================================================== -->
-    <section class="ux-section-wrap bg-[#f3ead8] border-b border-amber-200/80 py-5 sm:py-8">
-        <div class="ux-helper-badge"><i class="fa-solid fa-cube"></i> UX Builder: [section bg="#f3ead8"] + [row] 3 Cols Banner</div>
-        
+    <section class="bg-[#f3ead8] border-b border-amber-200/80 py-5 sm:py-8">
         <div class="max-w-7xl mx-auto px-3 sm:px-4">
             <!-- Khung Header Banner giống hệt ảnh Facebook khách gửi -->
             <div class="text-center mb-5 sm:mb-6 px-2">
@@ -443,11 +415,8 @@
 
     <!-- =====================================================================
          SECTION 2: 04 BƯỚC CHUYÊN NGHIỆP TRONG QUY TRÌNH CỦA PHÚC HƯNG
-         (Theo đúng mẫu dinhgosauna.vn - Dùng UX Icon Box trong Flatsome)
          ===================================================================== -->
-    <section class="ux-section-wrap py-10 bg-white border-b border-slate-200">
-        <div class="ux-helper-badge"><i class="fa-solid fa-cube"></i> UX Builder: [section] -> [title style="center"] -> [row] 4 Cols [featured_box]</div>
-        
+    <section class="py-10 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-3 sm:px-4">
             <div class="section-title-container">
                 <h2 class="section-title-main text-lg sm:text-2xl">
@@ -523,11 +492,8 @@
 
     <!-- =====================================================================
          SECTION 3: DANH MỤC SẢN PHẨM CHÍNH (TỐI ƯU 2 CỘT TRÊN ĐIỆN THOẠI, 4 CỘT TRÊN MÁY TÍNH)
-         UX Builder: [section] -> [title] -> [tabgroup] hoặc [ux_products columns="4" columns__sm="2"]
          ===================================================================== -->
-    <section id="san-pham" class="ux-section-wrap py-10 sm:py-12 bg-slate-50">
-        <div class="ux-helper-badge"><i class="fa-solid fa-cube"></i> UX Builder: [ux_products style="default" columns="4" columns__sm="2"] (Mobile 2 cột)</div>
-        
+    <section id="san-pham" class="py-10 sm:py-12 bg-slate-50">
         <div class="max-w-7xl mx-auto px-3 sm:px-4">
             <!-- Tiêu đề chuẩn Flatsome -->
             <div class="section-title-container">
@@ -562,7 +528,7 @@
 
             <!-- LƯỚI SẢN PHẨM: 2 CỘT TRÊN ĐIỆN THOẠI (grid-cols-2), 4 CỘT TRÊN MÁY TÍNH (lg:grid-cols-4) -->
             <div id="productGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
-                <!-- Danh sách sản phẩm được render tự động từ JS bên dưới để dễ quản lý và lọc nhanh -->
+                <!-- Danh sách sản phẩm được render tự động từ JS bên dưới -->
             </div>
 
             <!-- Banner kêu gọi tư vấn miễn phí dưới danh sách sản phẩm -->
@@ -588,11 +554,8 @@
 
     <!-- =====================================================================
          SECTION 4: CÔNG TRÌNH TIÊU BIỂU ĐÃ THI CÔNG (Giống mẫu dinhgosauna.vn)
-         UX Builder: [section] -> [title style="center"] -> [blog_posts columns="3" columns__sm="2"]
          ===================================================================== -->
-    <section id="cong-trinh" class="ux-section-wrap py-10 sm:py-12 bg-white border-t border-slate-200">
-        <div class="ux-helper-badge"><i class="fa-solid fa-cube"></i> UX Builder: [section] -> [title] -> [blog_posts style="normal" columns="3" columns__sm="2"]</div>
-        
+    <section id="cong-trinh" class="py-10 sm:py-12 bg-white border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-3 sm:px-4">
             <div class="section-title-container">
                 <h2 class="section-title-main text-lg sm:text-2xl">
@@ -613,12 +576,9 @@
     </section>
 
     <!-- =====================================================================
-         SECTION 5: TẠI SAO CHỌN CHÚNG TÔI & GIỚI THIỆU PHÚC HƯNG (Giống mẫu dinhgosauna.vn)
-         UX Builder: [section] -> [row] 2 Cols (Trái: 4 lý do, Phải: Giới thiệu Công ty)
+         SECTION 5: TẠI SAO CHỌN CHÚNG TÔI & GIỚI THIỆU PHÚC HƯNG
          ===================================================================== -->
-    <section id="gioi-thieu" class="ux-section-wrap py-10 sm:py-14 bg-slate-100 border-t border-slate-200">
-        <div class="ux-helper-badge"><i class="fa-solid fa-cube"></i> UX Builder: [section bg="#f1f5f9"] -> [row] 2 Cols (6/12 + 6/12)</div>
-        
+    <section id="gioi-thieu" class="py-10 sm:py-14 bg-slate-100 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-3 sm:px-4">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
                 
@@ -716,12 +676,9 @@
     </section>
 
     <!-- =====================================================================
-         SECTION 6: TIN TỨC & KINH NGHIỆM BỂ BƠI - XÔNG HƠI (Giống mẫu dinhgosauna.vn)
-         UX Builder: [section] -> [title style="center"] -> [blog_posts columns="4" columns__sm="2"]
+         SECTION 6: TIN TỨC & KINH NGHIỆM BỂ BƠI - XÔNG HƠI
          ===================================================================== -->
-    <section id="tin-tuc" class="ux-section-wrap py-10 sm:py-12 bg-white border-t border-slate-200">
-        <div class="ux-helper-badge"><i class="fa-solid fa-cube"></i> UX Builder: [section] -> [title] -> [blog_posts columns="4" columns__sm="2"]</div>
-        
+    <section id="tin-tuc" class="py-10 sm:py-12 bg-white border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-3 sm:px-4">
             <div class="section-title-container">
                 <h2 class="section-title-main text-lg sm:text-2xl">
@@ -833,11 +790,8 @@
 
     <!-- =====================================================================
          SECTION 7: ĐĂNG KÝ NHẬN THIẾT KẾ & BÁO GIÁ MIỄN PHÍ
-         UX Builder: [section] -> [row] 2 Cols (Form Liên Hệ + Thông tin Hotline/Bản đồ)
          ===================================================================== -->
-    <section id="lien-he-bao-gia" class="ux-section-wrap py-10 sm:py-12 bg-gradient-to-br from-primary-dark to-primary text-white">
-        <div class="ux-helper-badge"><i class="fa-solid fa-cube"></i> UX Builder: [section bg="primary"] -> [row] Contact Form 7 + Google Map</div>
-        
+    <section id="lien-he-bao-gia" class="py-10 sm:py-12 bg-gradient-to-br from-primary-dark to-primary text-white">
         <div class="max-w-7xl mx-auto px-3 sm:px-4">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
                 
@@ -1022,7 +976,7 @@
         </a>
     </div>
 
-    <!-- Thanh điều hướng cố định dưới đáy màn hình Điện thoại (Giúp khách bấm gọi/Zalo cực tiện) -->
+    <!-- Thanh điều hướng cố định dưới đáy màn hình Điện thoại -->
     <div class="sm:hidden fixed bottom-0 inset-x-0 bg-white border-t border-slate-200 z-40 grid grid-cols-3 py-1.5 px-2 gap-1.5 shadow-[0_-4px_12px_rgba(0,0,0,0.08)]">
         <a href="tel:0934722773" class="bg-red-600 text-white rounded-lg py-2 flex flex-col items-center justify-center font-bold text-[11px]">
             <i class="fa-solid fa-phone-volume text-sm mb-0.5"></i>
@@ -1077,157 +1031,10 @@
     </div>
 
     <!-- =====================================================================
-         MODAL LẤY MÃ SHORTCODE FLATSOME UX BUILDER (ĐỂ COPY DÁN VÀO WORDPRESS)
-         ===================================================================== -->
-    <div id="shortcodeModal" class="fixed inset-0 bg-slate-900/75 z-50 hidden items-center justify-center p-3" onclick="closeShortcodeModal()">
-        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] flex flex-col overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
-            <div class="flex items-center justify-between px-5 py-4 bg-slate-900 text-white">
-                <div>
-                    <h3 class="font-extrabold text-sm sm:text-base flex items-center gap-2">
-                        <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i>
-                        <span>Mã Shortcode Trang Chủ Flatsome UX Builder (phuchungpool.com)</span>
-                    </h3>
-                    <p class="text-xs text-slate-300 mt-0.5">Bạn chỉ cần Copy đoạn mã dưới đây dán vào tab Text/Shortcode của trang chủ WordPress Flatsome để lên sẵn toàn bộ bố cục!</p>
-                </div>
-                <button onclick="closeShortcodeModal()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-white flex items-center justify-center">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-
-            <div class="p-5 overflow-y-auto space-y-4 text-xs sm:text-sm">
-                <div class="bg-sky-50 border border-sky-200 rounded-xl p-3.5 text-slate-700 space-y-1">
-                    <div class="font-bold text-primary-dark">Hướng dẫn thiết lập cực nhanh trên Flatsome:</div>
-                    <div>1. Vào <strong>Flatsome &rarr; Theme Options &rarr; WooCommerce &rarr; Category Catalog</strong>: Chọn <strong>Products per row - Mobile = 2</strong> và <strong>Desktop = 4</strong>.</div>
-                    <div>2. Trong mọi Element <strong>UX Products</strong> trên UX Builder: Đặt <code>columns="4"</code> và <code>columns__sm="2"</code> để điện thoại luôn hiển thị đúng 2 cột sản phẩm.</div>
-                </div>
-
-                <div class="relative">
-                    <div class="flex items-center justify-between mb-1.5">
-                        <span class="font-bold text-slate-800">Shortcode UX Builder Trang Chủ:</span>
-                        <button onclick="copyFlatsomeShortcode()" id="btnCopyShortcode" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs px-3.5 py-1.5 rounded-lg transition flex items-center gap-1.5">
-                            <i class="fa-regular fa-copy"></i>
-                            <span>Copy toàn bộ Shortcode</span>
-                        </button>
-                    </div>
-                    <textarea id="flatsomeShortcodeText" readonly rows="14" class="w-full font-mono text-xs bg-slate-900 text-emerald-300 p-4 rounded-xl border border-slate-700 focus:outline-none">[section label="Hero Banner Phuc Hung" bg_color="#f3ead8" padding="30px"]
-[row style="small"]
-[col span="12" span__sm="12" align="center"]
-[ux_text text_align="center"]
-<h2><strong>CÔNG TY TNHH XÂY DỰNG VÀ CÔNG NGHỆ PHÚC HƯNG</strong></h2>
-<p>Chuyên thiết bị bể bơi, phòng xông hơi Quảng Nam - Đà Nẵng</p>
-<p><strong>"HOÀN TOÀN MIỄN PHÍ" : THIẾT KẾ, TƯ VẤN, BÁO GIÁ | Hotline: 0934.722.773 - Zalo, FB</strong></p>
-[/ux_text]
-[/col]
-[col span="4" span__sm="12"]
-[ux_banner height="360px" bg="" bg_overlay="rgba(0,0,0,0.35)"]
-[text_box width="90" position_x="50" position_y="90"]
-<h3><strong>THIẾT BỊ & THI CÔNG BỂ BƠI</strong></h3>
-[button text="Xem sản phẩm" color="secondary" size="small" link="#san-pham"]
-[/text_box]
-[/ux_banner]
-[/col]
-[col span="4" span__sm="12"]
-[ux_banner height="360px" bg="" bg_overlay="rgba(0,0,0,0.35)"]
-[text_box width="90" position_x="50" position_y="90"]
-<h3><strong>PHÒNG XÔNG HƠI KHÔ (SAUNA)</strong></h3>
-[button text="Xem mẫu phòng" color="secondary" size="small" link="#san-pham"]
-[/text_box]
-[/ux_banner]
-[/col]
-[col span="4" span__sm="12"]
-[ux_banner height="360px" bg="" bg_overlay="rgba(0,0,0,0.35)"]
-[text_box width="90" position_x="50" position_y="90"]
-<h3><strong>PHÒNG XÔNG HƠI ƯỚT (STEAM)</strong></h3>
-[button text="Xem chi tiết" color="secondary" size="small" link="#san-pham"]
-[/text_box]
-[/ux_banner]
-[/col]
-[/row]
-[/section]
-
-[section label="04 Buoc Quy Trinh" bg_color="#ffffff" padding="40px"]
-[row]
-[col span="12"]
-[title style="center" text="04 BƯỚC CHUYÊN NGHIỆP TRONG QUY TRÌNH CỦA PHÚC HƯNG"]
-[/col]
-[col span="3" span__sm="6"]
-[featured_box img_width="45" pos="top" title="01. Khảo sát & Tư vấn"]Trực tiếp khảo sát mặt bằng tại Đà Nẵng - Quảng Nam, tư vấn vật liệu và chi phí tối ưu.[/featured_box]
-[/col]
-[col span="3" span__sm="6"]
-[featured_box img_width="45" pos="top" title="02. Thiết kế & Báo giá 0đ"]Lên bản vẽ thiết kế chi tiết bể bơi / phòng xông hơi và báo giá hoàn toàn miễn phí.[/featured_box]
-[/col]
-[col span="3" span__sm="6"]
-[featured_box img_width="45" pos="top" title="03. Thi công & Giám sát"]Đội ngũ kỹ thuật viên giàu kinh nghiệm thi công chuẩn kỹ thuật, an toàn, thẩm mỹ.[/featured_box]
-[/col]
-[col span="3" span__sm="6"]
-[featured_box img_width="45" pos="top" title="04. Bàn giao & Bảo hành"]Vận hành thử, hướng dẫn sử dụng chi tiết và bảo hành tận nơi dài hạn.[/featured_box]
-[/col]
-[/row]
-[/section]
-
-[section label="San Pham 2 Cot Mobile 4 Cot Desktop" bg_color="#f8fafc" padding="45px"]
-[row]
-[col span="12"]
-[title style="center" text="SẢN PHẨM & THIẾT BỊ CHÍNH HÃNG"]
-[tabgroup style="pills" align="center"]
-[tab title="Phòng Xông Hơi"]
-[ux_products style="default" type="row" columns="4" columns__sm="2" products="8" cat="phong-xong-hoi"]
-[/tab]
-[tab title="Máy Xông Hơi"]
-[ux_products style="default" type="row" columns="4" columns__sm="2" products="8" cat="may-xong-hoi"]
-[/tab]
-[tab title="Thiết Bị Bể Bơi"]
-[ux_products style="default" type="row" columns="4" columns__sm="2" products="8" cat="thiet-bi-be-boi"]
-[/tab]
-[tab title="Gỗ & Phụ Kiện"]
-[ux_products style="default" type="row" columns="4" columns__sm="2" products="8" cat="go-phu-kien"]
-[/tab]
-[/tabgroup]
-[/col]
-[/row]
-[/section]
-
-[section label="Cong Trinh Tieu Bieu" bg_color="#ffffff" padding="45px"]
-[row]
-[col span="12"]
-[title style="center" text="CÔNG TRÌNH TIÊU BIỂU TẠI ĐÀ NẴNG - QUẢNG NAM"]
-[blog_posts style="normal" type="row" columns="3" columns__sm="2" posts="6" image_height="65%"]
-[/col]
-[/row]
-[/section]
-
-[section label="Tai Sao Chon Phuc Hung" bg_color="#f1f5f9" padding="50px"]
-[row]
-[col span="7" span__sm="12"]
-[title text="TẠI SAO CHỌN PHÚC HƯNG POOL & SAUNA?"]
-[row_inner]
-[col_inner span="6" span__sm="12"][ux_text]<h4><strong>01. Chất lượng cao</strong></h4><p>Vật tư gỗ thông Phần Lan, thiết bị bể bơi và máy xông hơi nhập khẩu chính hãng.</p>[/ux_text][/col_inner]
-[col_inner span="6" span__sm="12"][ux_text]<h4><strong>02. Thi công chuyên nghiệp</strong></h4><p>Đội ngũ kỹ thuật viên giàu kinh nghiệm tại Đà Nẵng - Quảng Nam.</p>[/ux_text][/col_inner]
-[col_inner span="6" span__sm="12"][ux_text]<h4><strong>03. Miễn phí thiết kế & báo giá</strong></h4><p>Tư vấn, khảo sát tận nơi và lên phương án hoàn toàn miễn phí.</p>[/ux_text][/col_inner]
-[col_inner span="6" span__sm="12"][ux_text]<h4><strong>04. Giá gốc cạnh tranh</strong></h4><p>Trực tiếp nhập khẩu và thi công trọn gói không qua trung gian.</p>[/ux_text][/col_inner]
-[/row_inner]
-[/col]
-[col span="5" span__sm="12"]
-[ux_text]
-<h3><strong>CÔNG TY TNHH XÂY DỰNG VÀ CÔNG NGHỆ PHÚC HƯNG</strong></h3>
-<p>Địa chỉ: 408 Văn Tiến Dũng, Phường Hòa Xuân, TP Đà Nẵng</p>
-<p>Hotline / Zalo: <strong>0934.722.773</strong></p>
-<p>Website: phuchungpool.com</p>
-[/ux_text]
-[button text="Gọi ngay: 0934.722.773" color="alert" link="tel:0934722773"]
-[/col]
-[/row]
-[/section]</textarea>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- =====================================================================
          JAVASCRIPT: DỮ LIỆU SẢN PHẨM, DỰ ÁN & XỬ LÝ TƯƠNG TÁC
          ===================================================================== -->
     <script>
-        // Danh sách 16 sản phẩm tiêu biểu (Lấy từ nội dung Thiết bị bể bơi & Phòng xông hơi Phúc Hưng + mẫu dinhgosauna.vn)
+        // Danh sách 16 sản phẩm tiêu biểu
         const PRODUCTS = [
             // 1. NHÓM PHÒNG XÔNG HƠI
             {
@@ -1482,7 +1289,6 @@
             grid.innerHTML = list.map(item => `
                 <div class="flatsome-product-box bg-white rounded-xl overflow-hidden border border-slate-200/90 flex flex-col justify-between group">
                     <div>
-                        <!-- Ảnh sản phẩm vuông chuẩn WooCommerce Flatsome -->
                         <div class="relative aspect-square overflow-hidden bg-slate-100 cursor-pointer" onclick="openProductModal(${item.id})">
                             <img 
                                 src="${item.image}" 
@@ -1495,7 +1301,6 @@
                             </span>
                         </div>
 
-                        <!-- Nội dung Box Text của Flatsome -->
                         <div class="p-2.5 sm:p-3.5 text-center">
                             <div class="text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 font-semibold truncate">
                                 ${item.categoryLabel}
@@ -1509,7 +1314,6 @@
                         </div>
                     </div>
 
-                    <!-- Nút hành động gọn gàng trên cả điện thoại 2 cột -->
                     <div class="px-2.5 pb-2.5 sm:px-3.5 sm:pb-3.5 pt-1 flex gap-1.5">
                         <button onclick="openProductModal(${item.id})" class="flex-1 bg-primary hover:bg-primary-dark text-white text-[11px] sm:text-xs font-bold py-2 rounded-lg transition">
                             Chi tiết
@@ -1569,7 +1373,6 @@
                                 alt="${proj.title}" 
                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                             >
-                            <!-- Badge Ngày tháng kiểu Blog Flatsome giống dinhgosauna.vn -->
                             <div class="absolute top-2.5 left-2.5 bg-white/95 text-primary-dark border border-slate-200 px-2 py-1 rounded text-center leading-none shadow">
                                 <span class="block text-xs sm:text-sm font-black">${proj.date}</span>
                                 <span class="block text-[10px] font-bold uppercase mt-0.5">${proj.month}</span>
@@ -1645,48 +1448,6 @@
         function toggleMobileMenu() {
             const overlay = document.getElementById('mobileMenuOverlay');
             overlay.classList.toggle('hidden');
-        }
-
-        // Bật/Tắt chế độ xem khung nhãn UX Builder
-        function toggleUxGuides() {
-            document.body.classList.toggle('show-ux-guides');
-            const btn = document.getElementById('btnUxGuide');
-            if (document.body.classList.contains('show-ux-guides')) {
-                btn.innerHTML = '<i class="fa-solid fa-eye-slash"></i><span>Tắt khung nhãn UX Builder</span>';
-                btn.classList.replace('bg-sky-600', 'bg-amber-500');
-                btn.classList.add('text-slate-950');
-            } else {
-                btn.innerHTML = '<i class="fa-solid fa-layer-group"></i><span>Bật khung nhãn UX Builder</span>';
-                btn.classList.replace('bg-amber-500', 'bg-sky-600');
-                btn.classList.remove('text-slate-950');
-            }
-        }
-
-        // Mở/Đóng Modal Shortcode UX Builder
-        function openShortcodeModal() {
-            const modal = document.getElementById('shortcodeModal');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-        }
-
-        function closeShortcodeModal() {
-            const modal = document.getElementById('shortcodeModal');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-        }
-
-        // Copy mã Shortcode UX Builder vào Clipboard
-        function copyFlatsomeShortcode() {
-            const textarea = document.getElementById('flatsomeShortcodeText');
-            textarea.select();
-            textarea.setSelectionRange(0, 99999);
-            document.execCommand('copy');
-
-            const btn = document.getElementById('btnCopyShortcode');
-            btn.innerHTML = '<i class="fa-solid fa-check"></i><span>Đã Copy Shortcode!</span>';
-            setTimeout(() => {
-                btn.innerHTML = '<i class="fa-regular fa-copy"></i><span>Copy toàn bộ Shortcode</span>';
-            }, 2500);
         }
 
         // Khởi tạo dữ liệu khi tải trang
