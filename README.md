@@ -139,31 +139,9 @@
 <body class="antialiased selection:bg-primary selection:text-white">
 
     <!-- =====================================================================
-         THANH CÔNG CỤ HỖ TRỢ NGƯỜI DÙNG THIẾT KẾ LẠI TRÊN FLATSOME UX BUILDER
-         ===================================================================== -->
-    <div id="uxToolbar" class="bg-slate-900 text-white text-xs py-2 px-3 border-b border-slate-700 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-            <div class="flex items-center gap-2">
-                <span class="bg-amber-500 text-slate-950 font-bold px-2 py-0.5 rounded text-[11px]">FLATSOME READY</span>
-                <span class="hidden sm:inline text-slate-300">Giao diện mẫu thiết kế tối giản, chuẩn cấu trúc Row/Col của UX Builder Flatsome (Mobile 2 cột sản phẩm).</span>
-            </div>
-            <div class="flex items-center gap-2 ml-auto">
-                <button onclick="toggleUxGuides()" id="btnUxGuide" class="bg-sky-600 hover:bg-sky-500 text-white px-2.5 py-1 rounded font-semibold transition flex items-center gap-1.5">
-                    <i class="fa-solid fa-layer-group"></i>
-                    <span>Bật khung nhãn UX Builder</span>
-                </button>
-                <button onclick="openShortcodeModal()" class="bg-emerald-600 hover:bg-emerald-500 text-white px-2.5 py-1 rounded font-semibold transition flex items-center gap-1.5">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Lấy Shortcode UX Builder</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- =====================================================================
          FLATSOME HEADER: TOP BAR + HEADER MAIN + HEADER BOTTOM NAV
          ===================================================================== -->
-    <header id="header" class="bg-white shadow-sm sticky top-[37px] z-40">
+    <header id="header" class="bg-white shadow-sm sticky top-0 z-40">
         
         <!-- 1. FLATSOME TOP BAR -->
         <div class="bg-primary-dark text-white text-xs py-1.5 px-3">
